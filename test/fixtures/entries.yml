@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contest_id: 
+  title: MyString
+  user_id: 
+  teaser: MyText
+  image: MyString
+  content: MyText
+  date_initiate: 2014-06-13 13:55:02
+  date_expire: 2014-06-13 13:55:02
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  phone: MyString
+  street_address: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  video: MyString
+  mallid: MyString
+  vote_total_display: 
+  approved: MyString
+  over_13: MyString
+
+two:
+  contest_id: 
+  title: MyString
+  user_id: 
+  teaser: MyText
+  image: MyString
+  content: MyText
+  date_initiate: 2014-06-13 13:55:02
+  date_expire: 2014-06-13 13:55:02
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  phone: MyString
+  street_address: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  video: MyString
+  mallid: MyString
+  vote_total_display: 
+  approved: MyString
+  over_13: MyString

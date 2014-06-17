@@ -1,0 +1,81 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  uid: 
+  teaser: MyText
+  image: MyString
+  content: MyText
+  apply_start: 2014-06-13 13:40:07
+  apply_end: 2014-06-13 13:40:07
+  vote_begin: 2014-06-13 13:40:07
+  vote_begin_display: MyString
+  vote_end: 2014-06-13 13:40:07
+  vote_end_display: MyString
+  theme: MyText
+  mall_ids: MyText
+  permission: MyString
+  entry_method: MyString
+  entry_frequency: MyString
+  winner_qualification: MyString
+  prize: MyString
+  winner_notification: MyString
+  redemption_method: MyString
+  announcement_date: 2014-06-13 13:40:07
+  confirmation_email_subject: MyString
+  alert_email_subject: MyString
+  alert_email_address: MyString
+  confirmation_email_body: MyText
+  alert_email_body: MyText
+  url: MyString
+  already_entered_text: MyText
+  not_begun_text: MyText
+  over_text: MyString
+  additional_information: MyText
+  design_and_copy: MyText
+  success_text: MyText
+  rules_url: MyString
+  report_type: MyString
+  report_params: MyText
+  announcement_method: MyString
+  : MyString
+
+two:
+  title: MyString
+  uid: 
+  teaser: MyText
+  image: MyString
+  content: MyText
+  apply_start: 2014-06-13 13:40:07
+  apply_end: 2014-06-13 13:40:07
+  vote_begin: 2014-06-13 13:40:07
+  vote_begin_display: MyString
+  vote_end: 2014-06-13 13:40:07
+  vote_end_display: MyString
+  theme: MyText
+  mall_ids: MyText
+  permission: MyString
+  entry_method: MyString
+  entry_frequency: MyString
+  winner_qualification: MyString
+  prize: MyString
+  winner_notification: MyString
+  redemption_method: MyString
+  announcement_date: 2014-06-13 13:40:07
+  confirmation_email_subject: MyString
+  alert_email_subject: MyString
+  alert_email_address: MyString
+  confirmation_email_body: MyText
+  alert_email_body: MyText
+  url: MyString
+  already_entered_text: MyText
+  not_begun_text: MyText
+  over_text: MyString
+  additional_information: MyText
+  design_and_copy: MyText
+  success_text: MyText
+  rules_url: MyString
+  report_type: MyString
+  report_params: MyText
+  announcement_method: MyString
+  : MyString

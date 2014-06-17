@@ -1,0 +1,83 @@
+Contest: 
+<p>
+  <strong>Title:</strong>
+  <%= @contest.title %>
+</p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @contest.uid %>
+</p>
+
+<p>
+  <strong>Teaser:</strong>
+  <%= @contest.teaser %>
+</p>
+
+<h1>Listing entries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Contest</th>
+      <th>Title</th>
+      <th>User</th>
+      <th>Teaser</th>
+      <th>Image</th>
+      <th>Content</th>
+      <th>Date initiate</th>
+      <th>Date expire</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Street address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zipcode</th>
+      <th>Video</th>
+      <th>Mallid</th>
+      <th>Vote total display</th>
+      <th>Approved</th>
+      <th>Over 13</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entries.each do |entry| %>
+      <tr>
+        <td><%= entry.contest_id %></td>
+        <td><%= entry.title %></td>
+        <td><%= entry.user_id %></td>
+        <td><%= entry.teaser %></td>
+        <td><%= entry.image %></td>
+        <td><%= entry.content %></td>
+        <td><%= entry.date_initiate %></td>
+        <td><%= entry.date_expire %></td>
+        <td><%= entry.first_name %></td>
+        <td><%= entry.last_name %></td>
+        <td><%= entry.email %></td>
+        <td><%= entry.phone %></td>
+        <td><%= entry.street_address %></td>
+        <td><%= entry.city %></td>
+        <td><%= entry.state %></td>
+        <td><%= entry.zipcode %></td>
+        <td><%= entry.video %></td>
+        <td><%= entry.mallid %></td>
+        <td><%= entry.vote_total_display %></td>
+        <td><%= entry.approved %></td>
+        <td><%= entry.over_13 %></td>
+        <td><%= link_to 'Show', [@contest, entry] %></td>
+        <td><%= link_to 'Edit',  [:edit, @contest, @entry] %></td>
+        <td><%= link_to 'Destroy', [@contest, @entry], method: :delete, data: { confirm: "Are you sure you want to delete this entry?"} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Entry', new_contest_entry_path %>

@@ -1,0 +1,165 @@
+<%= form_for(@contest) do |f| %>
+  <% if @contest.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contest.errors.count, "error") %> prohibited this contest from being saved:</h2>
+
+      <ul>
+      <% @contest.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :uid %><br>
+    <%= f.text_field :uid %>
+  </div>
+  <div class="field">
+    <%= f.label :teaser %><br>
+    <%= f.text_area :teaser %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br>
+    <%= f.text_area :content %>
+  </div>
+  <div class="field">
+    <%= f.label :apply_start %><br>
+    <%= f.datetime_select :apply_start %>
+  </div>
+  <div class="field">
+    <%= f.label :apply_end %><br>
+    <%= f.datetime_select :apply_end %>
+  </div>
+  <div class="field">
+    <%= f.label :vote_begin %><br>
+    <%= f.datetime_select :vote_begin %>
+  </div>
+  <div class="field">
+    <%= f.label :vote_begin_display %><br>
+    <%= f.text_field :vote_begin_display %>
+  </div>
+  <div class="field">
+    <%= f.label :vote_end %><br>
+    <%= f.datetime_select :vote_end %>
+  </div>
+  <div class="field">
+    <%= f.label :vote_end_display %><br>
+    <%= f.text_field :vote_end_display %>
+  </div>
+  <div class="field">
+    <%= f.label :theme %><br>
+    <%= f.text_area :theme %>
+  </div>
+  <div class="field">
+    <%= f.label :mall_ids %><br>
+    <%= f.text_area :mall_ids %>
+  </div>
+  <div class="field">
+    <%= f.label :permission %><br>
+    <%= f.text_field :permission %>
+  </div>
+  <div class="field">
+    <%= f.label :entry_method %><br>
+    <%= f.text_field :entry_method %>
+  </div>
+  <div class="field">
+    <%= f.label :entry_frequency %><br>
+    <%= f.text_field :entry_frequency %>
+  </div>
+  <div class="field">
+    <%= f.label :winner_qualification %><br>
+    <%= f.text_field :winner_qualification %>
+  </div>
+  <div class="field">
+    <%= f.label :prize %><br>
+    <%= f.text_field :prize %>
+  </div>
+  <div class="field">
+    <%= f.label :winner_notification %><br>
+    <%= f.text_field :winner_notification %>
+  </div>
+  <div class="field">
+    <%= f.label :redemption_method %><br>
+    <%= f.text_field :redemption_method %>
+  </div>
+  <div class="field">
+    <%= f.label :announcement_date %><br>
+    <%= f.datetime_select :announcement_date %>
+  </div>
+  <div class="field">
+    <%= f.label :confirmation_email_subject %><br>
+    <%= f.text_field :confirmation_email_subject %>
+  </div>
+  <div class="field">
+    <%= f.label :alert_email_subject %><br>
+    <%= f.text_field :alert_email_subject %>
+  </div>
+  <div class="field">
+    <%= f.label :alert_email_address %><br>
+    <%= f.text_field :alert_email_address %>
+  </div>
+  <div class="field">
+    <%= f.label :confirmation_email_body %><br>
+    <%= f.text_area :confirmation_email_body %>
+  </div>
+  <div class="field">
+    <%= f.label :alert_email_body %><br>
+    <%= f.text_area :alert_email_body %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :already_entered_text %><br>
+    <%= f.text_area :already_entered_text %>
+  </div>
+  <div class="field">
+    <%= f.label :not_begun_text %><br>
+    <%= f.text_area :not_begun_text %>
+  </div>
+  <div class="field">
+    <%= f.label :over_text %><br>
+    <%= f.text_field :over_text %>
+  </div>
+  <div class="field">
+    <%= f.label :additional_information %><br>
+    <%= f.text_area :additional_information %>
+  </div>
+  <div class="field">
+    <%= f.label :design_and_copy %><br>
+    <%= f.text_area :design_and_copy %>
+  </div>
+  <div class="field">
+    <%= f.label :success_text %><br>
+    <%= f.text_area :success_text %>
+  </div>
+  <div class="field">
+    <%= f.label :rules_url %><br>
+    <%= f.text_field :rules_url %>
+  </div>
+  <div class="field">
+    <%= f.label :report_type %><br>
+    <%= f.text_field :report_type %>
+  </div>
+  <div class="field">
+    <%= f.label :report_params %><br>
+    <%= f.text_area :report_params %>
+  </div>
+  <div class="field">
+    <%= f.label :announcement_method %><br>
+    <%= f.text_field :announcement_method %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

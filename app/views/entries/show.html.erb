@@ -1,0 +1,109 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Contest:</strong>
+  <%= @entry.contest_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @entry.title %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @entry.user_id %>
+</p>
+
+<p>
+  <strong>Teaser:</strong>
+  <%= @entry.teaser %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @entry.image %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @entry.content %>
+</p>
+
+<p>
+  <strong>Date initiate:</strong>
+  <%= @entry.date_initiate %>
+</p>
+
+<p>
+  <strong>Date expire:</strong>
+  <%= @entry.date_expire %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @entry.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @entry.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @entry.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @entry.phone %>
+</p>
+
+<p>
+  <strong>Street address:</strong>
+  <%= @entry.street_address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @entry.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @entry.state %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @entry.zipcode %>
+</p>
+
+<p>
+  <strong>Video:</strong>
+  <%= @entry.video %>
+</p>
+
+<p>
+  <strong>Mallid:</strong>
+  <%= @entry.mallid %>
+</p>
+
+<p>
+  <strong>Vote total display:</strong>
+  <%= @entry.vote_total_display %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @entry.approved %>
+</p>
+
+<p>
+  <strong>Over 13:</strong>
+  <%= @entry.over_13 %>
+</p>
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

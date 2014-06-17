@@ -1,0 +1,99 @@
+<h1>Listing contests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Uid</th>
+      <th>Teaser</th>
+      <th>Image</th>
+      <th>Content</th>
+      <th>Apply start</th>
+      <th>Apply end</th>
+      <th>Vote begin</th>
+      <th>Vote begin display</th>
+      <th>Vote end</th>
+      <th>Vote end display</th>
+      <th>Theme</th>
+      <th>Mall ids</th>
+      <th>Permission</th>
+      <th>Entry method</th>
+      <th>Entry frequency</th>
+      <th>Winner qualification</th>
+      <th>Prize</th>
+      <th>Winner notification</th>
+      <th>Redemption method</th>
+      <th>Announcement date</th>
+      <th>Confirmation email subject</th>
+      <th>Alert email subject</th>
+      <th>Alert email address</th>
+      <th>Confirmation email body</th>
+      <th>Alert email body</th>
+      <th>Url</th>
+      <th>Already entered text</th>
+      <th>Not begun text</th>
+      <th>Over text</th>
+      <th>Additional information</th>
+      <th>Design and copy</th>
+      <th>Success text</th>
+      <th>Rules url</th>
+      <th>Report type</th>
+      <th>Report params</th>
+      <th>Announcement method</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contests.each do |contest| %>
+      <tr>
+        <td><%= contest.title %></td>
+        <td><%= contest.uid %></td>
+        <td><%= contest.teaser %></td>
+        <td><%= contest.image %></td>
+        <td><%= contest.content %></td>
+        <td><%= contest.apply_start %></td>
+        <td><%= contest.apply_end %></td>
+        <td><%= contest.vote_begin %></td>
+        <td><%= contest.vote_begin_display %></td>
+        <td><%= contest.vote_end %></td>
+        <td><%= contest.vote_end_display %></td>
+        <td><%= contest.theme %></td>
+        <td><%= contest.mall_ids %></td>
+        <td><%= contest.permission %></td>
+        <td><%= contest.entry_method %></td>
+        <td><%= contest.entry_frequency %></td>
+        <td><%= contest.winner_qualification %></td>
+        <td><%= contest.prize %></td>
+        <td><%= contest.winner_notification %></td>
+        <td><%= contest.redemption_method %></td>
+        <td><%= contest.announcement_date %></td>
+        <td><%= contest.confirmation_email_subject %></td>
+        <td><%= contest.alert_email_subject %></td>
+        <td><%= contest.alert_email_address %></td>
+        <td><%= contest.confirmation_email_body %></td>
+        <td><%= contest.alert_email_body %></td>
+        <td><%= contest.url %></td>
+        <td><%= contest.already_entered_text %></td>
+        <td><%= contest.not_begun_text %></td>
+        <td><%= contest.over_text %></td>
+        <td><%= contest.additional_information %></td>
+        <td><%= contest.design_and_copy %></td>
+        <td><%= contest.success_text %></td>
+        <td><%= contest.rules_url %></td>
+        <td><%= contest.report_type %></td>
+        <td><%= contest.report_params %></td>
+        <td><%= contest.announcement_method %></td>
+        <td><%= link_to 'Show', contest %></td>
+        <td><%= link_to 'Edit', edit_contest_path(contest) %></td>
+        <td><%= link_to 'Destroy', contest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contest', new_contest_path %>
